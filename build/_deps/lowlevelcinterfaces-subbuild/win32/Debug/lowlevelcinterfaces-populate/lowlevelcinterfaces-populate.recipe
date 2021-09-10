@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\Debug\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\Debug\lowlevelcinterfaces-populate</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

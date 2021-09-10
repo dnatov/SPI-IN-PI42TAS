@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "_deps/lowlevelcinterfaces-build",
+		"source" : "build/_deps/lowlevelcinterfaces-src"
+	}
+}

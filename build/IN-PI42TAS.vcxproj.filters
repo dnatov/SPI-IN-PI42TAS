@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\IN_PI42TAS.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\IN_PI42TAS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{E32E05E8-77B1-31A4-8D2F-7FEB50556D5D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A54CF8CD-A16B-33F3-8FFB-62E6578D4E7B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

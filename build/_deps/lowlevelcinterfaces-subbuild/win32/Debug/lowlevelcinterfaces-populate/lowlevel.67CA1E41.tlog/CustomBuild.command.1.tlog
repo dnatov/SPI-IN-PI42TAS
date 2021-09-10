@@ -1,0 +1,162 @@
+^C:\GSDSOFTWARE\OTHERREPOS\SPI-IN-PI42TAS\BUILD\_DEPS\LOWLEVELCINTERFACES-SUBBUILD\CMAKEFILES\8F66C10EADA4B83C85C4DE0F9D01A08B\LOWLEVELCINTERFACES-POPULATE-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/Debug/lowlevelcinterfaces-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GSDSOFTWARE\OTHERREPOS\SPI-IN-PI42TAS\BUILD\_DEPS\LOWLEVELCINTERFACES-SUBBUILD\CMAKEFILES\8F66C10EADA4B83C85C4DE0F9D01A08B\LOWLEVELCINTERFACES-POPULATE-DOWNLOAD.RULE
+setlocal
+cd C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/tmp/lowlevelcinterfaces-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/Debug/lowlevelcinterfaces-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GSDSOFTWARE\OTHERREPOS\SPI-IN-PI42TAS\BUILD\_DEPS\LOWLEVELCINTERFACES-SUBBUILD\CMAKEFILES\8F66C10EADA4B83C85C4DE0F9D01A08B\LOWLEVELCINTERFACES-POPULATE-UPDATE.RULE
+setlocal
+cd C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/tmp/lowlevelcinterfaces-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GSDSOFTWARE\OTHERREPOS\SPI-IN-PI42TAS\BUILD\_DEPS\LOWLEVELCINTERFACES-SUBBUILD\CMAKEFILES\8F66C10EADA4B83C85C4DE0F9D01A08B\LOWLEVELCINTERFACES-POPULATE-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/Debug/lowlevelcinterfaces-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GSDSOFTWARE\OTHERREPOS\SPI-IN-PI42TAS\BUILD\_DEPS\LOWLEVELCINTERFACES-SUBBUILD\CMAKEFILES\8F66C10EADA4B83C85C4DE0F9D01A08B\LOWLEVELCINTERFACES-POPULATE-CONFIGURE.RULE
+setlocal
+cd C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/Debug/lowlevelcinterfaces-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GSDSOFTWARE\OTHERREPOS\SPI-IN-PI42TAS\BUILD\_DEPS\LOWLEVELCINTERFACES-SUBBUILD\CMAKEFILES\8F66C10EADA4B83C85C4DE0F9D01A08B\LOWLEVELCINTERFACES-POPULATE-BUILD.RULE
+setlocal
+cd C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/Debug/lowlevelcinterfaces-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GSDSOFTWARE\OTHERREPOS\SPI-IN-PI42TAS\BUILD\_DEPS\LOWLEVELCINTERFACES-SUBBUILD\CMAKEFILES\8F66C10EADA4B83C85C4DE0F9D01A08B\LOWLEVELCINTERFACES-POPULATE-INSTALL.RULE
+setlocal
+cd C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/Debug/lowlevelcinterfaces-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GSDSOFTWARE\OTHERREPOS\SPI-IN-PI42TAS\BUILD\_DEPS\LOWLEVELCINTERFACES-SUBBUILD\CMAKEFILES\8F66C10EADA4B83C85C4DE0F9D01A08B\LOWLEVELCINTERFACES-POPULATE-TEST.RULE
+setlocal
+cd C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/Debug/lowlevelcinterfaces-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GSDSOFTWARE\OTHERREPOS\SPI-IN-PI42TAS\BUILD\_DEPS\LOWLEVELCINTERFACES-SUBBUILD\CMAKEFILES\6B0C67DC22D253FF82C4CC0CB80C08DB\LOWLEVELCINTERFACES-POPULATE-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/CMakeFiles/Debug/lowlevelcinterfaces-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/Debug/lowlevelcinterfaces-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GSDSOFTWARE\OTHERREPOS\SPI-IN-PI42TAS\BUILD\_DEPS\LOWLEVELCINTERFACES-SUBBUILD\CMAKEFILES\A79887BAC04D68119C488C1E4B99988D\LOWLEVELCINTERFACES-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GSDSOFTWARE\OTHERREPOS\SPI-IN-PI42TAS\BUILD\_DEPS\LOWLEVELCINTERFACES-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild -BC:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild --check-stamp-file C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,963 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x86</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|win32">
+      <Configuration>Debug</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|win32">
+      <Configuration>Release</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{67CA1E41-D052-3C1E-8540-EE9085616222}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>win32</Platform>
+    <ProjectName>lowlevelcinterfaces-populate</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\CMakeFiles\8f66c10eada4b83c85c4de0f9d01a08b\lowlevelcinterfaces-populate-mkdir.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Creating directories for 'lowlevelcinterfaces-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/$(Configuration)/lowlevelcinterfaces-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Creating directories for 'lowlevelcinterfaces-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/$(Configuration)/lowlevelcinterfaces-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Creating directories for 'lowlevelcinterfaces-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/$(Configuration)/lowlevelcinterfaces-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Creating directories for 'lowlevelcinterfaces-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/$(Configuration)/lowlevelcinterfaces-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\CMakeFiles\8f66c10eada4b83c85c4de0f9d01a08b\lowlevelcinterfaces-populate-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Performing download step (git clone) for 'lowlevelcinterfaces-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+cd C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/tmp/lowlevelcinterfaces-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/$(Configuration)/lowlevelcinterfaces-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\lowlevelcinterfaces-populate-gitinfo.txt;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Performing download step (git clone) for 'lowlevelcinterfaces-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+cd C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/tmp/lowlevelcinterfaces-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/$(Configuration)/lowlevelcinterfaces-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\lowlevelcinterfaces-populate-gitinfo.txt;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Performing download step (git clone) for 'lowlevelcinterfaces-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+cd C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/tmp/lowlevelcinterfaces-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/$(Configuration)/lowlevelcinterfaces-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\lowlevelcinterfaces-populate-gitinfo.txt;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Performing download step (git clone) for 'lowlevelcinterfaces-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+cd C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/tmp/lowlevelcinterfaces-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/$(Configuration)/lowlevelcinterfaces-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\lowlevelcinterfaces-populate-gitinfo.txt;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\CMakeFiles\8f66c10eada4b83c85c4de0f9d01a08b\lowlevelcinterfaces-populate-update.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Performing update step for 'lowlevelcinterfaces-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+cd C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/tmp/lowlevelcinterfaces-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Performing update step for 'lowlevelcinterfaces-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+cd C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/tmp/lowlevelcinterfaces-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Performing update step for 'lowlevelcinterfaces-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+cd C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/tmp/lowlevelcinterfaces-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Performing update step for 'lowlevelcinterfaces-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+cd C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/tmp/lowlevelcinterfaces-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\CMakeFiles\8f66c10eada4b83c85c4de0f9d01a08b\lowlevelcinterfaces-populate-patch.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">No patch step for 'lowlevelcinterfaces-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/$(Configuration)/lowlevelcinterfaces-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">No patch step for 'lowlevelcinterfaces-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/$(Configuration)/lowlevelcinterfaces-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">No patch step for 'lowlevelcinterfaces-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/$(Configuration)/lowlevelcinterfaces-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">No patch step for 'lowlevelcinterfaces-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/$(Configuration)/lowlevelcinterfaces-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\CMakeFiles\8f66c10eada4b83c85c4de0f9d01a08b\lowlevelcinterfaces-populate-configure.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">No configure step for 'lowlevelcinterfaces-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+cd C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/$(Configuration)/lowlevelcinterfaces-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\tmp\lowlevelcinterfaces-populate-cfgcmd.txt;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">No configure step for 'lowlevelcinterfaces-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+cd C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/$(Configuration)/lowlevelcinterfaces-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\tmp\lowlevelcinterfaces-populate-cfgcmd.txt;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">No configure step for 'lowlevelcinterfaces-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+cd C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/$(Configuration)/lowlevelcinterfaces-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\tmp\lowlevelcinterfaces-populate-cfgcmd.txt;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">No configure step for 'lowlevelcinterfaces-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+cd C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/$(Configuration)/lowlevelcinterfaces-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\tmp\lowlevelcinterfaces-populate-cfgcmd.txt;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\CMakeFiles\8f66c10eada4b83c85c4de0f9d01a08b\lowlevelcinterfaces-populate-build.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">No build step for 'lowlevelcinterfaces-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+cd C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/$(Configuration)/lowlevelcinterfaces-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">No build step for 'lowlevelcinterfaces-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+cd C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/$(Configuration)/lowlevelcinterfaces-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">No build step for 'lowlevelcinterfaces-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+cd C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/$(Configuration)/lowlevelcinterfaces-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">No build step for 'lowlevelcinterfaces-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+cd C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/$(Configuration)/lowlevelcinterfaces-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\CMakeFiles\8f66c10eada4b83c85c4de0f9d01a08b\lowlevelcinterfaces-populate-install.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">No install step for 'lowlevelcinterfaces-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+cd C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/$(Configuration)/lowlevelcinterfaces-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">No install step for 'lowlevelcinterfaces-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+cd C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/$(Configuration)/lowlevelcinterfaces-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">No install step for 'lowlevelcinterfaces-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+cd C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/$(Configuration)/lowlevelcinterfaces-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">No install step for 'lowlevelcinterfaces-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+cd C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/$(Configuration)/lowlevelcinterfaces-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\CMakeFiles\8f66c10eada4b83c85c4de0f9d01a08b\lowlevelcinterfaces-populate-test.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">No test step for 'lowlevelcinterfaces-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+cd C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/$(Configuration)/lowlevelcinterfaces-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">No test step for 'lowlevelcinterfaces-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+cd C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/$(Configuration)/lowlevelcinterfaces-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">No test step for 'lowlevelcinterfaces-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+cd C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/$(Configuration)/lowlevelcinterfaces-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">No test step for 'lowlevelcinterfaces-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+cd C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/$(Configuration)/lowlevelcinterfaces-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\CMakeFiles\6b0c67dc22d253ff82c4cc0cb80c08db\lowlevelcinterfaces-populate-complete.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Completed 'lowlevelcinterfaces-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/CMakeFiles/$(Configuration)/lowlevelcinterfaces-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/$(Configuration)/lowlevelcinterfaces-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-install;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-mkdir;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-download;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-update;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-patch;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-configure;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-build;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\CMakeFiles\$(Configuration)\lowlevelcinterfaces-populate-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Completed 'lowlevelcinterfaces-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/CMakeFiles/$(Configuration)/lowlevelcinterfaces-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/$(Configuration)/lowlevelcinterfaces-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-install;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-mkdir;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-download;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-update;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-patch;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-configure;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-build;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\CMakeFiles\$(Configuration)\lowlevelcinterfaces-populate-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Completed 'lowlevelcinterfaces-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/CMakeFiles/$(Configuration)/lowlevelcinterfaces-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/$(Configuration)/lowlevelcinterfaces-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-install;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-mkdir;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-download;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-update;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-patch;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-configure;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-build;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\CMakeFiles\$(Configuration)\lowlevelcinterfaces-populate-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Completed 'lowlevelcinterfaces-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/CMakeFiles/$(Configuration)/lowlevelcinterfaces-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/lowlevelcinterfaces-populate-prefix/src/lowlevelcinterfaces-populate-stamp/$(Configuration)/lowlevelcinterfaces-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-install;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-mkdir;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-download;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-update;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-patch;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-configure;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-build;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\src\lowlevelcinterfaces-populate-stamp\$(Configuration)\lowlevelcinterfaces-populate-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\CMakeFiles\$(Configuration)\lowlevelcinterfaces-populate-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\CMakeFiles\a79887bac04d68119c488c1e4b99988d\lowlevelcinterfaces-populate.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\CMakeFiles\$(Configuration)\lowlevelcinterfaces-populate-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\CMakeFiles\lowlevelcinterfaces-populate</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\CMakeFiles\$(Configuration)\lowlevelcinterfaces-populate-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\CMakeFiles\lowlevelcinterfaces-populate</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\CMakeFiles\$(Configuration)\lowlevelcinterfaces-populate-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\CMakeFiles\lowlevelcinterfaces-populate</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\CMakeFiles\$(Configuration)\lowlevelcinterfaces-populate-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\CMakeFiles\lowlevelcinterfaces-populate</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Building Custom Rule C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild -BC:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild --check-stamp-file C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\CMakeFiles\3.21.0-rc3\CMakeSystem.cmake;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\tmp\lowlevelcinterfaces-populate-cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\ExternalProject-gitupdate.cmake.in;C:\Program Files\CMake\share\cmake-3.21\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\RepositoryInfo.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Building Custom Rule C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild -BC:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild --check-stamp-file C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\CMakeFiles\3.21.0-rc3\CMakeSystem.cmake;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\tmp\lowlevelcinterfaces-populate-cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\ExternalProject-gitupdate.cmake.in;C:\Program Files\CMake\share\cmake-3.21\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\RepositoryInfo.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Building Custom Rule C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild -BC:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild --check-stamp-file C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\CMakeFiles\3.21.0-rc3\CMakeSystem.cmake;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\tmp\lowlevelcinterfaces-populate-cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\ExternalProject-gitupdate.cmake.in;C:\Program Files\CMake\share\cmake-3.21\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\RepositoryInfo.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Building Custom Rule C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild -BC:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild --check-stamp-file C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\CMakeFiles\3.21.0-rc3\CMakeSystem.cmake;C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\lowlevelcinterfaces-populate-prefix\tmp\lowlevelcinterfaces-populate-cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\ExternalProject-gitupdate.cmake.in;C:\Program Files\CMake\share\cmake-3.21\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\RepositoryInfo.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\CMakeFiles\lowlevelcinterfaces-populate">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\_deps\lowlevelcinterfaces-subbuild\ZERO_CHECK.vcxproj">
+      <Project>{72D909FA-8C96-3008-9606-E26BEFA5854F}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

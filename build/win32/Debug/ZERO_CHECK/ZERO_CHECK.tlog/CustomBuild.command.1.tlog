@@ -1,0 +1,10 @@
+^C:\GSDSOFTWARE\OTHERREPOS\SPI-IN-PI42TAS\BUILD\CMAKEFILES\96266FB92333BE4505991530C1C96EB0\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS -BC:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/IN-PI42TAS.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

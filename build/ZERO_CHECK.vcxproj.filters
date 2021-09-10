@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\GSDSoftware\OtherRepos\SPI-IN-PI42TAS\build\CMakeFiles\96266fb92333be4505991530c1c96eb0\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{DA4B0022-9AD6-38B3-9E0C-4AD9BC6350D6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

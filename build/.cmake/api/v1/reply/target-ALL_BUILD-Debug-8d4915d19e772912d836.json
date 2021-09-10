@@ -1,0 +1,36 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"build/_deps/lowlevelcinterfaces-src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "LowLevelCInterfaces::@9b002b877a453894bf17"
+		}
+	],
+	"id" : "ALL_BUILD::@9b002b877a453894bf17",
+	"isGeneratorProvided" : true,
+	"name" : "ALL_BUILD",
+	"paths" : 
+	{
+		"build" : "_deps/lowlevelcinterfaces-build",
+		"source" : "build/_deps/lowlevelcinterfaces-src"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}
