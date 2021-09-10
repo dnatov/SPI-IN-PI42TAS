@@ -65,6 +65,7 @@ void IN_PI42TAS_SetLED(struct IN_PI42TAS_t* instance, uint16_t index, uint8_t co
 		{
 			// Current Byte index of the buffer
 			uint8_t byteIndex = (index * 9) + (bitNumber * 3) / 8;
+			
 			// Get current bit index in the byte for the bit we are about to set
 			uint8_t bitIndex = ((bitNumber % 8) * 3) + i;
 
