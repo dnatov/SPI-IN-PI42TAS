@@ -1,3 +1,0 @@
-repository='https://github.com/JeroenVandezande/LowLevelCInterfaces.git'
-module=''
-tag='origin'

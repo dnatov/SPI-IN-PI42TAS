@@ -1,5 +1,0 @@
-C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/CMakeFiles/IN_PI42TAS.dir
-C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/CMakeFiles/ALL_BUILD.dir
-C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/CMakeFiles/ZERO_CHECK.dir
-C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-build/CMakeFiles/LowLevelCInterfaces.dir
-C:/GSDSoftware/OtherRepos/SPI-IN-PI42TAS/build/_deps/lowlevelcinterfaces-build/CMakeFiles/ALL_BUILD.dir
