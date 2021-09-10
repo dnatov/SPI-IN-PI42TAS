@@ -20,60 +20,38 @@
 //OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //SOFTWARE.
 
-#include "IN_PI42TAS.h"
-#include <stdio.h>
+#ifndef IN_PI42TAS_LIBRARY_H
+#define IN_PI42TAS_LIBRARY_H
 
-#define SETBIT(byte,bitIndex) ((byte) |= 1 << (bitIndex) ? (byte):(bitIndex))
+#include <stdbool.h>
+#include <stdint.h>
+#include "LL_spi.h"
 
-const int LED_BYTE_SIZE = 9;
-
-enum IN_PI42TAS_Colors_t
+struct IN_PI42TAS_t
 {
-	Red = 0x00FF00,
-	Green = 0xFF0000,
-	Blue = 0x0000FF
+    uint8_t _bufferSize;
+    uint8_t *_buffer;
+    LL_SPIMaster_ReadWriteMethod_t SPI_ReadWriteMethodPtr;
 };
 
-void IN_PI42TAS_Init(struct IN_PI42TAS_t* instance, uint16_t amountOfLeds)
-{
-	//Allocate 72 bits per LED address. 3 spi bits per LED protocol bit. 24bits x 3
-	instance->buffer = (uint8_t *) malloc(LED_BYTE_SIZE * amountOfLeds);
-}
+/// Initialization function
+/// \param instance a pointer to the instance struct
+/// \param amountOfLeds the amount of LEDs in series.
+void IN_PI42TAS_Init(struct IN_PI42TAS_t* instance, uint16_t amountOfLeds);
 
-void IN_PI42TAS_TurnOffAll(struct IN_PI42TAS_t* instance)
-{
-	
-}
+/// Turns off all LEDs in the string and resets the byte buffer
+/// \param instance a pointer to the instance of the object
+void IN_PI42TAS_TurnOffAll(struct IN_PI42TAS_t* instance);
 
-void IN_PI42TAS_SetAllToColor(struct IN_PI42TAS_t* instance, uint8_t color[3])
-{
-	
-}
+/// Sets all of the LEDs to a certain color
+/// \param instance a pointer to the instance of the object
+/// \param color 24 bit uint for representing color (GRB)
+void IN_PI42TAS_SetAllToColor(struct IN_PI42TAS_t* instance, uint8_t color[3]);
 
-void IN_PI42TAS_SetLED(struct IN_PI42TAS_t* instance, uint16_t index, uint8_t color[3])
-{
-	// Translate 24 bit color to a 72bit SPI communication
-	for (size_t bitNumber = 0; bitNumber < 24; bitNumber++)
-	{
-		// Get color bit from 24bit color
-		bool bit = (color[((bitNumber) % 8)] >> (bitNumber % 8)) & 1;
+/// Sets a particular LED to a certain color
+/// \param instance a pointer to the instance of the object
+/// \param index The index of the LED in the chain
+/// \param color 24 bit uint for representing color (GRB)
+void IN_PI42TAS_SetLED(struct IN_PI42TAS_t* instance, uint16_t index, uint8_t color[3]);
 
-		uint8_t spiBits = bit ? 0b110 : 0b100;
-
-		// Set bits
-		for (size_t i = 0; i < 3; i++)
-		{
-			// Current Byte index of the buffer
-			uint8_t byteIndex = (index * 9) + (bitNumber * 3) / 8;
-			
-			// Get current bit index in the byte for the bit we are about to set
-			uint8_t bitIndex = ((bitNumber % 8) * 3) + i;
-
-			SETBIT(instance->buffer[byteIndex], bitIndex);
-		}
-		
-		instance->buffer[(index*LED_BYTE_SIZE)] = spiBits;
-	}
-}
-
-inline void IN_PI42TAS_Bitshift()
+#endif //IN_PI42TAS_LIBRARY_H

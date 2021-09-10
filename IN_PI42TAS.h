@@ -20,8 +20,8 @@
 //OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //SOFTWARE.
 
-#ifndef PCA6408A_LIBRARY_H
-#define PCA6408A_LIBRARY_H
+#ifndef IN_PI42TAS_LIBRARY_H
+#define IN_PI42TAS_LIBRARY_H
 
 #include <stdbool.h>
 #include <stdint.h>
@@ -29,11 +29,12 @@
 
 struct IN_PI42TAS_t
 {
-	uint8_t *buffer;
-	LL_SPIMaster_ReadWriteMethod_t SPI_ReadWriteMethodPtr;
+    uint8_t _bufferSize;
+    uint8_t *_buffer;
+    LL_SPIMaster_ReadWriteMethod_t SPI_ReadWriteMethodPtr;
 };
 
-/// Initialization function 
+/// Initialization function
 /// \param instance a pointer to the instance struct
 /// \param amountOfLeds the amount of LEDs in series.
 void IN_PI42TAS_Init(struct IN_PI42TAS_t* instance, uint16_t amountOfLeds);
@@ -53,4 +54,4 @@ void IN_PI42TAS_SetAllToColor(struct IN_PI42TAS_t* instance, uint8_t color[3]);
 /// \param color 24 bit uint for representing color (GRB)
 void IN_PI42TAS_SetLED(struct IN_PI42TAS_t* instance, uint16_t index, uint8_t color[3]);
 
-#endif //PCA6408A_LIBRARY_H
+#endif //IN_PI42TAS_LIBRARY_H
