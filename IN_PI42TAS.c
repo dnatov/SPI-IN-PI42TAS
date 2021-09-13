@@ -20,38 +20,90 @@
 //OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //SOFTWARE.
 
-#ifndef IN_PI42TAS_LIBRARY_H
-#define IN_PI42TAS_LIBRARY_H
+#include "IN_PI42TAS.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-#include <stdbool.h>
-#include <stdint.h>
-#include "LL_spi.h"
+#define SETBIT(byte,nbit)   ((byte) |=  (1U<<(nbit)))
+#define CLEARBIT(byte,nbit) ((byte) &= ~(1U<<(nbit)))
+#define CHECK_BIT(byte,nbit) ((byte) &   (1UL<<(nbit)))
 
-struct IN_PI42TAS_t
+const int LED_BYTE_SIZE = 9;
+
+enum IN_PI42TAS_Colors_t
 {
-    uint8_t _bufferSize;
-    uint8_t *_buffer;
-    LL_SPIMaster_ReadWriteMethod_t SPI_ReadWriteMethodPtr;
+    Red = 0x00FF00,
+    Green = 0xFF0000,
+    Blue = 0x0000FF
 };
 
-/// Initialization function
-/// \param instance a pointer to the instance struct
-/// \param amountOfLeds the amount of LEDs in series.
-void IN_PI42TAS_Init(struct IN_PI42TAS_t* instance, uint16_t amountOfLeds);
+void IN_PI42TAS_Init(struct IN_PI42TAS_t* instance, uint16_t amountOfLeds)
+{
+    instance->_bufferSize = LED_BYTE_SIZE * amountOfLeds;
 
-/// Turns off all LEDs in the string and resets the byte buffer
-/// \param instance a pointer to the instance of the object
-void IN_PI42TAS_TurnOffAll(struct IN_PI42TAS_t* instance);
+    // Allocate 72 bits per LED address. 3 spi bits per LED protocol bit. 24bits x 3
+    instance->_buffer = (uint8_t *) malloc(instance->_bufferSize);
+    IN_PI42TAS_TurnOffAll(instance);
+}
 
-/// Sets all of the LEDs to a certain color
-/// \param instance a pointer to the instance of the object
-/// \param color 24 bit uint for representing color (GRB)
-void IN_PI42TAS_SetAllToColor(struct IN_PI42TAS_t* instance, uint8_t color[3]);
+void IN_PI42TAS_TurnOffAll(struct IN_PI42TAS_t* instance)
+{
+    // Fill buffer with 0s
+    memset(instance->_buffer, 0, instance->_bufferSize);
 
-/// Sets a particular LED to a certain color
-/// \param instance a pointer to the instance of the object
-/// \param index The index of the LED in the chain
-/// \param color 24 bit uint for representing color (GRB)
-void IN_PI42TAS_SetLED(struct IN_PI42TAS_t* instance, uint16_t index, uint8_t color[3]);
+    // Set SPI buffer
+    instance->SPI_ReadWriteMethodPtr(instance->_buffer, instance->_bufferSize, 0);
+}
 
-#endif //IN_PI42TAS_LIBRARY_H
+void IN_PI42TAS_SetAllToColor(struct IN_PI42TAS_t* instance, uint8_t color[3])
+{
+
+}
+
+static inline uint8_t EvalBitIndex(size_t bitNumber)
+{
+    return (((bitNumber % 8) * 3) % 8);
+}
+
+static inline uint16_t EvalByteIndex(uint16_t index, size_t bitNumber)
+{
+    return (index * 9) + (bitNumber * 3) / 8;
+}
+
+void IN_PI42TAS_SetLED(struct IN_PI42TAS_t* instance, uint16_t index, uint8_t color[3])
+{
+    // Translate 24 bit color to a 72bit SPI communication
+    for (size_t bitNumber = 0; bitNumber < 24; bitNumber++)
+    {
+        // Get color bit from 24bit color
+        bool bit = CHECK_BIT(color[((bitNumber) / 8)], (bitNumber % 8));
+
+        uint8_t spiBits = bit ? 0b110 : 0b100;
+
+        // Current Byte index of the buffer
+        uint16_t byteIndex = EvalByteIndex(index, bitNumber);
+
+        // Get current bit index in the byte for the bit we are about to set
+        uint8_t bitIndex = EvalBitIndex(bitNumber);
+
+        SETBIT(instance->_buffer[byteIndex], (7-bitIndex));
+        if (bit)
+        {
+            byteIndex = (bitIndex + 1 >= 8) ? byteIndex + 1 : byteIndex;
+            bitIndex = (bitIndex + 1) % 8; //keep within 8 bits
+            SETBIT(instance->_buffer[byteIndex], (7-bitIndex));
+        }
+        else
+        {
+            byteIndex = (bitIndex + 1 >= 8) ? byteIndex + 1 : byteIndex;
+            bitIndex = (bitIndex + 1) % 8; //keep within 8 bits
+            CLEARBIT(instance->_buffer[byteIndex], (7-bitIndex));
+        }
+        byteIndex = (bitIndex + 1 >= 8) ? byteIndex + 1 : byteIndex;
+        bitIndex = (bitIndex + 1) % 8; //keep within 8 bits
+        CLEARBIT(instance->_buffer[byteIndex], (7-bitIndex));
+    }
+
+    instance->SPI_ReadWriteMethodPtr(instance->_buffer, instance->_bufferSize, 0);
+}
