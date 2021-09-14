@@ -1,2 +1,2 @@
 # SPI-IN-PI42TAS
-C code for Inolux IN-PI42TAS RGB 4-Pin LED. The primary drive mechanism utilizes an SPI interface MOSI pin clocked at 3MHz. Allows for chaining RGB LEDs in succession.
+C code for Inolux IN-PI42TAS RGB 4-Pin LED on a STM32 Chip. The primary drive mechanism utilizes an SPI interface MOSI pin clocked at 6.25MHz. Allows for chaining RGB LEDs in succession. Uses 8 bits per 1 bit period.

@@ -29,8 +29,9 @@
 
 struct IN_PI42TAS_t
 {
-    uint8_t _bufferSize;
+    size_t _bufferSize;
     uint8_t *_buffer;
+    uint16_t _numberOfLeds;
     LL_SPIMaster_ReadWriteMethod_t SPI_ReadWriteMethodPtr;
 };
 

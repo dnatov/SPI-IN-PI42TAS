@@ -21,15 +21,30 @@
 //SOFTWARE.
 
 #include "IN_PI42TAS.h"
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-#define SETBIT(byte,nbit)   ((byte) |=  (1U<<(nbit)))
-#define CLEARBIT(byte,nbit) ((byte) &= ~(1U<<(nbit)))
-#define CHECK_BIT(byte,nbit) ((byte) &   (1UL<<(nbit)))
+// Shift from LSB to MSB in color, assign an 8bit logic high or low byte and increment buffer pointer
+#define IN_PI42TAS_FillBuffer(COLOR)\
+{\
+    uint8_t bits = COLOR;\
+    for (int pos = 7 ; pos >= 0 ; pos--) \
+    {\
+        if (bits & (1 << pos)) \
+        {\
+            *Ptr++ = LOGIC_LED_1;   \
+        } \
+        else \
+        {                           \
+            *Ptr++ = LOGIC_LED_0;\
+        }\
+    }\
+}\
 
-const int LED_BYTE_SIZE = 9;
+const int LED_BYTE_SIZE = 24;
+const int LED_RESET_PULSE = 10;
+const uint8_t LOGIC_LED_0 = 0xC0;
+const uint8_t LOGIC_LED_1 = 0xF0;
 
 enum IN_PI42TAS_Colors_t
 {
@@ -40,70 +55,48 @@ enum IN_PI42TAS_Colors_t
 
 void IN_PI42TAS_Init(struct IN_PI42TAS_t* instance, uint16_t amountOfLeds)
 {
-    instance->_bufferSize = LED_BYTE_SIZE * amountOfLeds;
-
-    // Allocate 72 bits per LED address. 3 spi bits per LED protocol bit. 24bits x 3
+    instance->_bufferSize = LED_BYTE_SIZE * amountOfLeds + LED_RESET_PULSE;
+    instance->_numberOfLeds = amountOfLeds;
+    // Allocate 192 bits per LED address. 8 spi bits per LED protocol bit. 24bits x 8
     instance->_buffer = (uint8_t *) malloc(instance->_bufferSize);
     IN_PI42TAS_TurnOffAll(instance);
+}
+
+static inline void ClearLEDBuffer(struct IN_PI42TAS_t* instance)
+{
+    memset(instance->_buffer, 0x00, instance->_bufferSize);
 }
 
 void IN_PI42TAS_TurnOffAll(struct IN_PI42TAS_t* instance)
 {
     // Fill buffer with 0s
-    memset(instance->_buffer, 0, instance->_bufferSize);
+    ClearLEDBuffer(instance);
 
     // Set SPI buffer
     instance->SPI_ReadWriteMethodPtr(instance->_buffer, instance->_bufferSize, 0);
 }
 
+static inline void FillBufferForLED(struct IN_PI42TAS_t* instance, uint16_t index, uint8_t color[3])
+{
+    uint8_t *Ptr = &instance->_buffer[24 * index];
+    IN_PI42TAS_FillBuffer(color[0]); //g
+    IN_PI42TAS_FillBuffer(color[1]); //r
+    IN_PI42TAS_FillBuffer(color[2]); //b
+}
+
 void IN_PI42TAS_SetAllToColor(struct IN_PI42TAS_t* instance, uint8_t color[3])
 {
+    for(int i = 0; i < instance->_numberOfLeds; i++)
+    {
+        FillBufferForLED(instance, i, color);
+    }
 
-}
-
-static inline uint8_t EvalBitIndex(size_t bitNumber)
-{
-    return (((bitNumber % 8) * 3) % 8);
-}
-
-static inline uint16_t EvalByteIndex(uint16_t index, size_t bitNumber)
-{
-    return (index * 9) + (bitNumber * 3) / 8;
+    instance->SPI_ReadWriteMethodPtr(instance->_buffer, instance->_bufferSize, 0);
 }
 
 void IN_PI42TAS_SetLED(struct IN_PI42TAS_t* instance, uint16_t index, uint8_t color[3])
 {
-    // Translate 24 bit color to a 72bit SPI communication
-    for (size_t bitNumber = 0; bitNumber < 24; bitNumber++)
-    {
-        // Get color bit from 24bit color
-        bool bit = CHECK_BIT(color[((bitNumber) / 8)], (bitNumber % 8));
-
-        uint8_t spiBits = bit ? 0b110 : 0b100;
-
-        // Current Byte index of the buffer
-        uint16_t byteIndex = EvalByteIndex(index, bitNumber);
-
-        // Get current bit index in the byte for the bit we are about to set
-        uint8_t bitIndex = EvalBitIndex(bitNumber);
-
-        SETBIT(instance->_buffer[byteIndex], (7-bitIndex));
-        if (bit)
-        {
-            byteIndex = (bitIndex + 1 >= 8) ? byteIndex + 1 : byteIndex;
-            bitIndex = (bitIndex + 1) % 8; //keep within 8 bits
-            SETBIT(instance->_buffer[byteIndex], (7-bitIndex));
-        }
-        else
-        {
-            byteIndex = (bitIndex + 1 >= 8) ? byteIndex + 1 : byteIndex;
-            bitIndex = (bitIndex + 1) % 8; //keep within 8 bits
-            CLEARBIT(instance->_buffer[byteIndex], (7-bitIndex));
-        }
-        byteIndex = (bitIndex + 1 >= 8) ? byteIndex + 1 : byteIndex;
-        bitIndex = (bitIndex + 1) % 8; //keep within 8 bits
-        CLEARBIT(instance->_buffer[byteIndex], (7-bitIndex));
-    }
+    FillBufferForLED(instance, index, color);
 
     instance->SPI_ReadWriteMethodPtr(instance->_buffer, instance->_bufferSize, 0);
 }
