@@ -44,15 +44,27 @@ void IN_PI42TAS_Init(struct IN_PI42TAS_t* instance, uint16_t amountOfLeds);
 /// \param instance a pointer to the instance of the object
 void IN_PI42TAS_TurnOffAll(struct IN_PI42TAS_t* instance);
 
-/// Sets all of the LEDs to a certain color
+/// Sets all of the LEDs to a certain color and writes the buffer to SPI
 /// \param instance a pointer to the instance of the object
 /// \param color 24 bit uint for representing color (GRB)
-void IN_PI42TAS_SetAllToColor(struct IN_PI42TAS_t* instance, uint8_t color[3]);
+void IN_PI42TAS_SetAndWriteAllToColor(struct IN_PI42TAS_t* instance, uint8_t color[3]);
 
-/// Sets a particular LED to a certain color
+/// Sets a particular LED to a certain color and writes the entire buffer to SPI (SLOW)
+/// \param instance a pointer to the instance of the object
+/// \param index The index of the LED in the chain
+/// \param color 24 bit uint for representing color (GRB)
+void IN_PI42TAS_SetAndWriteLED(struct IN_PI42TAS_t* instance, uint16_t index, uint8_t color[3]);
+
+/// Sets a particular LED to a certain color without writing to SPI. Use with WriteBufferToSPI
 /// \param instance a pointer to the instance of the object
 /// \param index The index of the LED in the chain
 /// \param color 24 bit uint for representing color (GRB)
 void IN_PI42TAS_SetLED(struct IN_PI42TAS_t* instance, uint16_t index, uint8_t color[3]);
+
+/// Writes the buffer to SPI
+/// \param instance a pointer to the instance of the object
+/// \param index The index of the LED in the chain
+/// \param color 24 bit uint for representing color (GRB)
+void IN_PI42TAS_WriteBufferToSPI(struct IN_PI42TAS_t* instance);
 
 #endif //IN_PI42TAS_LIBRARY_H
