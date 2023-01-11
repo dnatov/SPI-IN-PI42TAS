@@ -4,7 +4,7 @@ project(IN_PI42TAS C)
 set(CMAKE_C_STANDARD 99)
 
 include(cpm/CPM.cmake)
-CPMAddPackage("gh:JeroenVandezande/LowLevelCInterfaces@1.1.0")
+CPMAddPackage("gh:JeroenVandezande/LowLevelCInterfaces@1.2.0")
 
 add_library(${PROJECT_NAME} IN_PI42TAS.c IN_PI42TAS.h)
 
