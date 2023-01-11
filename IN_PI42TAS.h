@@ -27,6 +27,11 @@
 #include <stdint.h>
 #include "LL_spi.h"
 
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
 struct IN_PI42TAS_t
 {
     size_t _bufferSize;
@@ -66,5 +71,9 @@ void IN_PI42TAS_SetLED(struct IN_PI42TAS_t* instance, uint16_t index, uint8_t co
 /// \param index The index of the LED in the chain
 /// \param color 24 bit uint for representing color (GRB)
 void IN_PI42TAS_WriteBufferToSPI(struct IN_PI42TAS_t* instance);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif //IN_PI42TAS_LIBRARY_H
