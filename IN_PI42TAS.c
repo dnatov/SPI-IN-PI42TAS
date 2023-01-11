@@ -73,7 +73,7 @@ void IN_PI42TAS_TurnOffAll(struct IN_PI42TAS_t* instance)
     ClearLEDBuffer(instance);
 
     // Set SPI buffer
-    instance->SPI_ReadWriteMethodPtr(instance->_buffer, instance->_bufferSize, 0);
+    instance->SPI_ReadWriteMethodPtr(instance->_buffer, instance->_bufferSize, 0, spmMode0);
 }
 
 static inline void FillBufferForLED(struct IN_PI42TAS_t* instance, uint16_t index, uint8_t color[3])
@@ -91,14 +91,14 @@ void IN_PI42TAS_SetAndWriteAllToColor(struct IN_PI42TAS_t* instance, uint8_t col
         FillBufferForLED(instance, i, color);
     }
 
-    instance->SPI_ReadWriteMethodPtr(instance->_buffer, instance->_bufferSize, 0);
+    instance->SPI_ReadWriteMethodPtr(instance->_buffer, instance->_bufferSize, 0, spmMode0);
 }
 
 void IN_PI42TAS_SetAndWriteLED(struct IN_PI42TAS_t* instance, uint16_t index, uint8_t color[3])
 {
     FillBufferForLED(instance, index, color);
 
-    instance->SPI_ReadWriteMethodPtr(instance->_buffer, instance->_bufferSize, 0);
+    instance->SPI_ReadWriteMethodPtr(instance->_buffer, instance->_bufferSize, 0, spmMode0);
 }
 
 void IN_PI42TAS_SetLED(struct IN_PI42TAS_t* instance, uint16_t index, uint8_t color[3])
@@ -108,5 +108,5 @@ void IN_PI42TAS_SetLED(struct IN_PI42TAS_t* instance, uint16_t index, uint8_t co
 
 void IN_PI42TAS_WriteBufferToSPI(struct IN_PI42TAS_t* instance)
 {
-    instance->SPI_ReadWriteMethodPtr(instance->_buffer, instance->_bufferSize, 0);
+    instance->SPI_ReadWriteMethodPtr(instance->_buffer, instance->_bufferSize, 0, spmMode0);
 }
